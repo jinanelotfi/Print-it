@@ -46,14 +46,14 @@ let arrowLeft = document.querySelector(".arrow_left")
 		}
 		
 		let currentIndex = Array.from(dotList.children).indexOf(currentPoint);
-		let prevIndex = Array.from(dotList.children).indexOf(prevPoint);
+		let prevIndex = Array.from(dotList.children).indexOf(prevPoint);	
 
 		currentPoint.classList.remove('dot_selected');
 		prevPoint.classList.add('dot_selected');
-// changement des images
+
 		let currentSlide = slides[currentIndex];
 		let prevSlide = slides[prevIndex];
-
+// changement des images
 		let image = document.querySelector('.banner-img');
 		let text = document.querySelector('#banner p');
 
@@ -77,10 +77,10 @@ let arrowRight = document.querySelector(".arrow_right")
 		  
 		currentPoint.classList.remove('dot_selected');
 		nextPoint.classList.add('dot_selected');
-// changement des images
+
 		let currentSlide = slides[currentIndex];
 		let nextSlide = slides[nextIndex];
-
+// changement des images
 		let image = document.querySelector('.banner-img');
 		let text = document.querySelector('#banner p');
 
